@@ -1,0 +1,10 @@
+{
+  "extends": "vitemple/tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "rootDir": "src",
+    "allowImportingTsExtensions": true
+  },
+  "files": ["node_modules/vitemple/src/components.d.ts"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts"]
+}

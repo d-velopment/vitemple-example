@@ -1,0 +1,16 @@
+{
+  "name": "vitemple-basic-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "vite preview",
+    "build": "vitemple src/index.html --outdir dist",
+    "dev": "node node_modules/vitemple/dev.mjs"
+  },
+  "dependencies": {
+    "vitemple": "^0.1.3"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0"
+  }
+}
