@@ -1,5 +1,5 @@
 // Shared state store
-store.set({ counter: 0, selectedPage: '1' });
+store.init({ counter: 0, selectedPage: '1' });
 store.subscribe((state) => {
   document.title = `Temple counter: ${state.counter} · Page ${state.selectedPage}`;
 });
