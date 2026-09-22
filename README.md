@@ -7,6 +7,8 @@
 
 A small, runnable showcase for [Vitemple](https://github.com/d-velopment/vitemple), a TypeScript-first HTML component preprocessor that targets native DOM APIs. The `basic` example demonstrates recursive HTML slots, scoped CSS, TypeScript scripts, reusable templates, and shared in-box reactivity through `store`.
 
+Online demo: https://d-velopment.github.io/vitemple-example/
+
 ## Quick start
 
 ```sh
