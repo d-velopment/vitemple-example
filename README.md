@@ -1,6 +1,6 @@
 # Vitemple Examples
 
-[![Vitemple](https://img.shields.io/badge/Vitemple-0.1.5-2563eb?style=flat-square)](https://github.com/d-velopment/vitemple)
+[![npm version](https://img.shields.io/npm/v/vitemple?style=flat-square&color=2563eb)](https://www.npmjs.com/package/vitemple)
 [![TypeScript](https://img.shields.io/badge/TypeScript-first-3178c6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-powered-646cff?style=flat-square&logo=vite&logoColor=white)](https://vite.dev/)
 [![Native DOM](https://img.shields.io/badge/rendering-native%20DOM-0f766e?style=flat-square)](https://github.com/d-velopment/vitemple)
@@ -71,7 +71,7 @@ The example depends on the published npm package:
 
 ```json
 "dependencies": {
-  "vitemple": "^0.1.3"
+  "vitemple": "^0.2.4"
 }
 ```
 
