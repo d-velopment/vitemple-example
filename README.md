@@ -1,8 +1,9 @@
 # Vitemple Examples
 
-[![npm version](https://img.shields.io/npm/v/vitemple?style=flat-square&color=2563eb)](https://www.npmjs.com/package/vitemple)
-[![TypeScript](https://img.shields.io/badge/TypeScript-first-3178c6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+
+[![Vitemple npm version](https://img.shields.io/npm/v/vitemple?style=flat-square&color=2563eb)](https://www.npmjs.com/package/vitemple)
 [![Vite](https://img.shields.io/badge/Vite-powered-646cff?style=flat-square&logo=vite&logoColor=white)](https://vite.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-first-3178c6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Native DOM](https://img.shields.io/badge/rendering-native%20DOM-0f766e?style=flat-square)](https://github.com/d-velopment/vitemple)
 
 A small, runnable showcase for [Vitemple](https://github.com/d-velopment/vitemple), a TypeScript-first HTML component preprocessor that targets native DOM APIs. The `basic` example demonstrates recursive HTML slots, scoped CSS, TypeScript scripts, reusable templates, and shared in-box reactivity through `store`.
