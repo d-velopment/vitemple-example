@@ -1,0 +1,120 @@
+:root {
+  color-scheme: dark;
+  font-family: system-ui, sans-serif;
+  background: #111;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+#screen {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: #111;
+  cursor: pointer;
+  isolation: isolate;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#screen:disabled {
+  cursor: wait;
+}
+
+#screen:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: -3px;
+}
+
+#screen img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  user-select: none;
+}
+
+.background {
+  z-index: 0;
+}
+
+.glass {
+  z-index: 1;
+  mix-blend-mode: lighten;
+  opacity: 0.001;
+  transition: opacity 100ms linear;
+}
+
+.glass.is-visible {
+  opacity: 1;
+}
+
+.play-cue {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  width: clamp(4rem, 12vw, 5.5rem);
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid rgb(255 255 255 / 45%);
+  border-radius: 50%;
+  background: rgb(255 255 255 / 20%);
+  box-shadow: 0 4px 24px rgb(0 0 0 / 20%);
+  color: #fff;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.play-cue.is-hidden {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.92);
+}
+
+.play-cue svg {
+  width: clamp(3.5rem, 11.45vw, 5.25rem);
+  height: clamp(3.5rem, 11.45vw, 5.25rem);
+  fill: currentColor;
+  transform: translateX(2px);
+}
+
+[hidden] {
+  display: none !important;
+}
+
+#status {
+  position: fixed;
+  z-index: 2;
+  inset: auto 1rem 1rem;
+  width: fit-content;
+  max-width: calc(100% - 2rem);
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background: rgb(0 0 0 / 75%);
+  color: #fff;
+  font-size: 0.875rem;
+  text-align: center;
+  pointer-events: none;
+}

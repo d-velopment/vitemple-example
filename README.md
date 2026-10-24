@@ -93,6 +93,22 @@ basic/
 └── tsconfig.json
 ```
 
+## Packer example
+
+The [`packer`](./packer/) example loads a full-screen background, a glass overlay,
+and a sound from a single `.vpack` file with `vitemple/file-pack`. Clicking the
+screen shows the glass with the `overlay` blend mode and plays the sound; the
+glass disappears when playback ends. Repeated clicks restart the effect.
+
+```sh
+cd packer
+npm install
+npm run dev
+```
+
+This example uses the latest Vitemple GitHub commit at the time it was added.
+See [packer/README.md](./packer/README.md) for the pinned revision and build commands.
+
 ## Related project
 
 - [Vitemple framework](https://github.com/d-velopment/vitemple)

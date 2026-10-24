@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vitemple · Packer example</title>
+    <meta
+      name="description"
+      content="A full-screen image and sound demo loaded from a single Vitemple file pack."
+    >
+    <link
+      rel="preload"
+      href="./assets/example.vpack"
+      as="fetch"
+      crossorigin="anonymous"
+    >
+    <slot src="./style.css" type="css" />
+  </head>
+  <body>
+    <button
+      id="screen"
+      type="button"
+      aria-label="Play the glass crack effect. Click, tap, or press Enter or Space."
+      disabled
+    >
+      <img id="background" class="background" alt="" draggable="false">
+      <img id="glass" class="glass" alt="" draggable="false">
+      <span class="play-cue" aria-hidden="true">
+        <svg viewBox="0 0 24 24" focusable="false">
+          <path d="M8 5v14l11-7z"></path>
+        </svg>
+      </span>
+    </button>
+    <p id="status" role="status">Loading example.vpack…</p>
+    <audio id="sound" preload="auto"></audio>
+    <slot src="./scripts.ts" type="script" />
+  </body>
+</html>

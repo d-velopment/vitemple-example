@@ -1,0 +1,14 @@
+{
+  "name": "vitemple-packer-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vitemple src/index.html --outdir dist",
+    "dev": "node node_modules/vitemple/scripts/dev.mjs",
+    "start": "npm run build && node node_modules/vitemple/scripts/preview.mjs",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "vitemple": "git+https://github.com/d-velopment/vitemple.git#4081a0eea9179acde57781ff76afc17165b446a9"
+  }
+}
